@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Star Bear Battle",
+  "version": "0.1",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://krazydad.com/play/starbattle/*"],
+      "js": ["index.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["starbearbattle.js"],
+      "matches": ["https://krazydad.com/*"]
+    }
+  ]
+}
